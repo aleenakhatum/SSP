@@ -1,0 +1,7 @@
+Running: xsim.dir/RxFIFO_behav/xsimk.exe -simmode gui -wdb RxFIFO_behav.wdb -simrunnum 0 -socket 51458
+Design successfully loaded
+Design Loading Memory Usage: 28768 KB (Peak: 28768 KB)
+Design Loading CPU Usage: 1109 ms
+Simulation completed
+Simulation Memory Usage: 29740 KB (Peak: 29740 KB)
+Simulation CPU Usage: 1218 ms

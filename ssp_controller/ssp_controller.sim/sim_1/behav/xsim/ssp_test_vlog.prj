@@ -1,0 +1,15 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../ssp_controller.srcs/sources_1/new/RxFIFO.v" \
+"../../../../ssp_controller.srcs/sources_1/new/TxFIFO.v" \
+"../../../../ssp_controller.srcs/sources_1/new/clk_div2.v" \
+"../../../../ssp_controller.srcs/sources_1/new/fifo4_8.v" \
+"../../../../ssp_controller.srcs/sources_1/new/ssp.v" \
+"../../../../ssp_controller.srcs/sources_1/new/tx_rx_logic.v" \
+"../../../../ssp_controller.srcs/sim_1/imports/xsim/ssp_test1.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

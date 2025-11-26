@@ -1,0 +1,1031 @@
+$date
+   Tue Nov 25 16:30:48 2025
+$end
+
+$version
+  2024.2.0
+  $dumpfile ("tx_rx_logic.vcd") 
+$end
+
+$timescale
+  1ps
+$end
+
+$scope module tb_tx_rx_logic $end
+$var reg 1 ! PCLK $end
+$var reg 1 " CLEAR_B $end
+$var wire 1 # SSPCLKOUT $end
+$var wire 1 $ SSPOE_B $end
+$var wire 1 % SSPTXD $end
+$var wire 1 & SSPFSSOUT $end
+$var wire 1 ' tx_read $end
+$var reg 8 ( TxData [7:0] $end
+$var reg 1 ) SSPFSSIN $end
+$var reg 1 * SSPRXD $end
+$var wire 8 + tx_data_from_fifo [7:0] $end
+$var wire 1 , tx_empty $end
+$var wire 1 - tx_full $end
+$var wire 1 . rx_empty $end
+$var wire 1 / rx_full $end
+$var wire 8 0 rx_data_to_fifo [7:0] $end
+$var wire 1 1 rx_write $end
+$scope module u_div $end
+$var wire 1 2 PCLK $end
+$var wire 1 3 reset $end
+$var reg 1 4 SSPCLKOUT $end
+$upscope $end
+$scope module tx_fifo $end
+$var wire 1 5 PSEL $end
+$var wire 1 6 PWRITE $end
+$var wire 1 ' tx_read $end
+$var wire 1 7 CLEAR_B $end
+$var wire 1 8 PCLK $end
+$var wire 8 9 PWDATA [7:0] $end
+$var wire 8 + TxData [7:0] $end
+$var wire 1 - full $end
+$var wire 1 : CLEAR $end
+$scope module u_fifo $end
+$var wire 1 : reset $end
+$var wire 1 8 clk $end
+$var wire 1 5 select $end
+$var wire 1 6 write $end
+$var wire 1 ' read $end
+$var wire 8 9 data_in [7:0] $end
+$var wire 1 - full $end
+$var wire 1 ; empty $end
+$var reg 8 < data_out [7:0] $end
+$var reg 2 = wptr [1:0] $end
+$var reg 2 > rptr [1:0] $end
+$var reg 3 ? count [2:0] $end
+$upscope $end
+$upscope $end
+$scope module rx_fifo $end
+$var wire 1 @ PSEL $end
+$var wire 1 1 rx_write $end
+$var wire 1 A PWRITE $end
+$var wire 1 B CLEAR_B $end
+$var wire 1 C PCLK $end
+$var wire 8 0 RxDATA [7:0] $end
+$var wire 8 D PRDATA [7:0] $end
+$var wire 1 / full $end
+$var wire 1 E CLEAR $end
+$var wire 1 F RxData $end
+$scope module u_fifo $end
+$var wire 1 E reset $end
+$var wire 1 C clk $end
+$var wire 1 @ select $end
+$var wire 1 1 write $end
+$var wire 1 G read $end
+$var wire 8 H data_in [7:0] $end
+$var wire 1 / full $end
+$var wire 1 I empty $end
+$var reg 8 J data_out [7:0] $end
+$var reg 2 K wptr [1:0] $end
+$var reg 2 L rptr [1:0] $end
+$var reg 3 M count [2:0] $end
+$upscope $end
+$upscope $end
+$scope module dut $end
+$var wire 1 N CLEAR_B $end
+$var wire 1 O PCLK $end
+$var wire 1 # SSPCLKOUT $end
+$var reg 1 P SSPOE_B $end
+$var wire 8 + TxData [7:0] $end
+$var wire 1 , tx_empty $end
+$var wire 1 Q tx_full $end
+$var reg 1 R SSPTXD $end
+$var reg 1 S SSPFSSOUT $end
+$var reg 1 T tx_read $end
+$var wire 1 & SSPFSSIN $end
+$var wire 1 % SSPRXD $end
+$var wire 1 U rx_empty $end
+$var wire 1 / rx_full $end
+$var reg 1 V rx_write $end
+$var reg 2 W tx_state [1:0] $end
+$var reg 8 X shift_reg [7:0] $end
+$var reg 4 Y bit_count_tx [3:0] $end
+$var reg 4 Z bit_count_rx [3:0] $end
+$var reg 2 [ rx_state [1:0] $end
+$var reg 8 \ parallel_reg [7:0] $end
+$var wire 1 ] CLEAR $end
+$upscope $end
+$scope task send_serial $end
+$var reg 8 ^ byte [7:0] $end
+$var integer 32 _ i [31:0] $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+
+#0
+$dumpvars
+0!
+0"
+x#
+x$
+x%
+x&
+x'
+bx (
+0)
+0*
+bx +
+z,
+x-
+z.
+x/
+bz 0
+x1
+02
+13
+x4
+15
+06
+07
+08
+b0 9
+1:
+x;
+bx <
+bx =
+bx >
+bx ?
+1@
+0A
+0B
+0C
+bx D
+1E
+zF
+1G
+bz H
+xI
+bx J
+bx K
+bx L
+bx M
+0N
+0O
+xP
+zQ
+xR
+xS
+xT
+zU
+xV
+bx W
+bx X
+bx Y
+bx Z
+bx [
+bx \
+1]
+bx ^
+bx _
+$end
+
+#10000
+1!
+0#
+b0 +
+0-
+0/
+12
+04
+18
+1;
+b0 <
+b0 =
+b0 >
+b0 ?
+1C
+b0 D
+1I
+b0 J
+b0 K
+b0 L
+b0 M
+1O
+
+#20000
+0!
+02
+08
+0C
+0O
+
+#30000
+1!
+12
+18
+1C
+1O
+
+#40000
+0!
+02
+08
+0C
+0O
+
+#50000
+1!
+12
+18
+1C
+1O
+
+#60000
+0!
+02
+08
+0C
+0O
+
+#70000
+1!
+12
+18
+1C
+1O
+
+#80000
+0!
+1"
+02
+03
+17
+08
+0:
+1B
+0C
+0E
+1N
+0O
+0]
+
+#90000
+1!
+1#
+12
+14
+18
+1C
+1O
+b0 W
+b0 [
+
+#100000
+0!
+02
+08
+0C
+0O
+
+#110000
+1!
+0#
+1$
+12
+04
+18
+1C
+1O
+1P
+
+#120000
+0!
+02
+08
+0C
+0O
+
+#130000
+1!
+1#
+0%
+0&
+0'
+01
+12
+14
+18
+1C
+1O
+0R
+0S
+0T
+0V
+b0 X
+b0 Y
+b1000 Z
+b1 [
+b0 \
+
+#140000
+0!
+02
+08
+0C
+0O
+
+#150000
+1!
+0#
+12
+04
+18
+1C
+1O
+
+#160000
+0!
+02
+08
+0C
+0O
+
+#170000
+1!
+1#
+12
+14
+18
+1C
+1O
+
+#180000
+0!
+02
+16
+08
+b1010101 9
+0C
+0O
+
+#190000
+1!
+0#
+12
+04
+18
+b10101010 9
+0;
+b1 =
+b1 ?
+1C
+1O
+
+#200000
+0!
+02
+08
+0C
+0O
+
+#210000
+1!
+1#
+12
+14
+18
+b11000011 9
+b10 =
+b10 ?
+1C
+1O
+
+#220000
+0!
+02
+08
+0C
+0O
+
+#230000
+1!
+0#
+12
+04
+18
+b111100 9
+b11 =
+b11 ?
+1C
+1O
+
+#240000
+0!
+02
+08
+0C
+0O
+
+#250000
+1!
+1#
+12
+14
+06
+18
+b0 9
+1C
+1O
+
+#260000
+0!
+02
+08
+0C
+0O
+
+#270000
+1!
+0#
+12
+04
+18
+1C
+1O
+
+#280000
+0!
+02
+08
+0C
+0O
+
+#290000
+1!
+1#
+12
+14
+18
+1C
+1O
+
+#300000
+0!
+02
+08
+0C
+0O
+
+#310000
+1!
+0#
+12
+04
+18
+1C
+1O
+
+#320000
+0!
+02
+08
+0C
+0O
+
+#330000
+1!
+1#
+12
+14
+18
+1C
+1O
+
+#340000
+0!
+02
+08
+0C
+0O
+
+#350000
+1!
+0#
+12
+04
+18
+1C
+1O
+
+#360000
+0!
+02
+08
+0C
+0O
+
+#370000
+1!
+1#
+12
+14
+18
+1C
+1O
+
+#380000
+0!
+02
+08
+0C
+0O
+
+#390000
+1!
+0#
+12
+04
+18
+1C
+1O
+
+#400000
+0!
+02
+08
+0C
+0O
+
+#410000
+1!
+1#
+12
+14
+18
+1C
+1O
+
+#420000
+0!
+02
+08
+0C
+0O
+
+#430000
+1!
+0#
+12
+04
+18
+1C
+1O
+
+#440000
+0!
+02
+08
+0C
+0O
+
+#450000
+1!
+1#
+12
+14
+18
+1C
+1O
+
+#460000
+0!
+02
+08
+0C
+0O
+
+#470000
+1!
+0#
+12
+04
+18
+1C
+1O
+
+#480000
+0!
+02
+08
+0C
+0O
+
+#490000
+1!
+1#
+12
+14
+18
+1C
+1O
+
+#500000
+0!
+02
+08
+0C
+0O
+
+#510000
+1!
+0#
+12
+04
+18
+1C
+1O
+
+#520000
+0!
+02
+08
+0C
+0O
+
+#530000
+1!
+1#
+12
+14
+18
+1C
+1O
+
+#540000
+0!
+02
+08
+0C
+0O
+
+#550000
+1!
+0#
+12
+04
+18
+1C
+1O
+
+#560000
+0!
+02
+08
+0C
+0O
+
+#570000
+1!
+1#
+12
+14
+18
+1C
+1O
+
+#580000
+0!
+02
+08
+0C
+0O
+
+#590000
+1!
+0#
+12
+04
+18
+1C
+1O
+
+#600000
+0!
+02
+08
+0C
+0O
+
+#610000
+1!
+1#
+12
+14
+18
+1C
+1O
+
+#620000
+0!
+02
+08
+0C
+0O
+
+#630000
+1!
+0#
+12
+04
+18
+1C
+1O
+
+#640000
+0!
+02
+08
+0C
+0O
+
+#650000
+1!
+1#
+12
+14
+18
+1C
+1O
+
+#660000
+0!
+02
+08
+0C
+0O
+
+#670000
+1!
+0#
+12
+04
+18
+1C
+1O
+
+#680000
+0!
+02
+08
+0C
+0O
+
+#690000
+1!
+1#
+12
+14
+18
+1C
+1O
+
+#700000
+0!
+02
+08
+0C
+0O
+
+#710000
+1!
+0#
+12
+04
+18
+1C
+1O
+
+#720000
+0!
+02
+08
+0C
+0O
+
+#730000
+1!
+1#
+12
+14
+18
+1C
+1O
+
+#740000
+0!
+02
+08
+0C
+0O
+
+#750000
+1!
+0#
+12
+04
+18
+1C
+1O
+
+#760000
+0!
+02
+08
+0C
+0O
+
+#770000
+1!
+1#
+12
+14
+18
+1C
+1O
+
+#780000
+0!
+02
+08
+0C
+0O
+
+#790000
+1!
+0#
+12
+04
+18
+1C
+1O
+
+#800000
+0!
+02
+08
+0C
+0O
+
+#810000
+1!
+1#
+12
+14
+18
+1C
+1O
+
+#820000
+0!
+02
+08
+0C
+0O
+
+#830000
+1!
+0#
+12
+04
+18
+1C
+1O
+
+#840000
+0!
+02
+08
+0C
+0O
+
+#850000
+1!
+1#
+12
+14
+18
+1C
+1O
+
+#860000
+0!
+02
+08
+0C
+0O
+
+#870000
+1!
+0#
+12
+04
+18
+1C
+1O
+
+#880000
+0!
+02
+08
+0C
+0O
+
+#890000
+1!
+1#
+12
+14
+18
+1C
+1O
+
+#900000
+0!
+02
+08
+0C
+0O
+
+#910000
+1!
+0#
+12
+04
+18
+1C
+1O
+
+#920000
+0!
+02
+08
+0C
+0O
+
+#930000
+1!
+1#
+12
+14
+18
+1C
+1O
+
+#940000
+0!
+02
+08
+0C
+0O
+
+#950000
+1!
+0#
+12
+04
+18
+1C
+1O
+
+#960000
+0!
+02
+08
+0C
+0O
+
+#970000
+1!
+1#
+12
+14
+18
+1C
+1O
+
+#980000
+0!
+02
+08
+0C
+0O
+
+#990000
+1!
+0#
+12
+04
+18
+1C
+1O
+
+#1000000
+0!
+02
+08
+0C
+0O
