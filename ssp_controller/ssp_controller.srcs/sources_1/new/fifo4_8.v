@@ -7,7 +7,7 @@ module fifo4_8(
     input wire [7:0] data_in,
     output wire full,
     output wire empty, //unused
-    output reg [7:0] data_out
+    output wire [7:0] data_out
     );
     
     reg [7:0] fifo [3:0];
@@ -16,13 +16,21 @@ module fifo4_8(
     
     assign full = (count == 4);
     assign empty = (count == 0);
+    assign data_out = fifo[rptr];
+    reg read_new;
+    wire read_rising;
+    
+    assign read_rising = read && !read_new;
     
     always @(posedge clk) begin
         if (reset == 1'b1) begin
             wptr <= 2'd0;
             rptr <= 2'd0;
             count <= 3'd0;
-            data_out <= 8'd0;
+            read_new <= 0;
+        end
+        else begin
+            read_new <= read;
         end
         
         if (write == 1'b1 && full == 1'b0 && select == 1'b1) begin //write signal high
@@ -30,8 +38,7 @@ module fifo4_8(
             wptr <= wptr + 1;
             count <= count + 1;
         end
-        else if (read == 1'b1 && empty == 1'b0 && select == 1'b1) begin //read signal high
-            data_out <= fifo[rptr];
+        else if (read_rising == 1'b1 && empty == 1'b0) begin //read signal high
             rptr <= rptr + 1;
             count <= count - 1;
         end

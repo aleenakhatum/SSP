@@ -99,23 +99,15 @@ module tx_rx_logic(
                 bit_count_tx <= bit_count_tx + 1;
                 
                 if (bit_count_tx == 7) begin
-                    //tx_read <= 1; //read from fifo to remove item
                     bit_count_tx <= 0;
-                    if (tx_read == 1 && tx_empty == 0) begin //more data to transmit
-                        tx_read <= 0;
+                    if (tx_empty == 0) begin //more data to transmit
+                        tx_read <= 1;
                         tx_state <= tx_SHIFT;
                         shift_reg <= TxData;
                         SSPFSSOUT <= 1; //high for lsb if there is a next data
                     end
-                    else begin
-                        tx_state <= tx_LOAD;
-                    end
-                    
-                    if (tx_empty == 1) begin
+                    else if (tx_empty == 1) begin //nothing else to read
                         tx_state <= tx_IDLE;
-                    end
-                    else if (tx_empty == 0) begin
-                        tx_read <= 1;
                     end
                 end
             end
