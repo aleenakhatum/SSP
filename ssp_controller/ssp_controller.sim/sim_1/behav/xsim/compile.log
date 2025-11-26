@@ -1,14 +1,14 @@
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/aleen/Documents/College/Fall2025/VLSI/ssp_controller/ssp_controller.srcs/sources_1/new/RxFIFO.v" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/aleen/Documents/College/Fall2025/VLSI/SSP/ssp_controller/ssp_controller.srcs/sources_1/new/RxFIFO.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module RxFIFO
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/aleen/Documents/College/Fall2025/VLSI/ssp_controller/ssp_controller.srcs/sources_1/new/TxFIFO.v" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/aleen/Documents/College/Fall2025/VLSI/SSP/ssp_controller/ssp_controller.srcs/sources_1/new/TxFIFO.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module TxFIFO
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/aleen/Documents/College/Fall2025/VLSI/ssp_controller/ssp_controller.srcs/sources_1/new/clk_div2.v" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/aleen/Documents/College/Fall2025/VLSI/SSP/ssp_controller/ssp_controller.srcs/sources_1/new/clk_div2.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module clk_div2
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/aleen/Documents/College/Fall2025/VLSI/ssp_controller/ssp_controller.srcs/sources_1/new/fifo4_8.v" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/aleen/Documents/College/Fall2025/VLSI/SSP/ssp_controller/ssp_controller.srcs/sources_1/new/fifo4_8.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module fifo4_8
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/aleen/Documents/College/Fall2025/VLSI/ssp_controller/ssp_controller.srcs/sources_1/new/ssp.v" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/aleen/Documents/College/Fall2025/VLSI/SSP/ssp_controller/ssp_controller.srcs/sources_1/new/ssp.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module ssp
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/aleen/Documents/College/Fall2025/VLSI/ssp_controller/ssp_controller.srcs/sources_1/new/tx_rx_logic.v" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/aleen/Documents/College/Fall2025/VLSI/SSP/ssp_controller/ssp_controller.srcs/sources_1/new/tx_rx_logic.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module tx_rx_logic
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/aleen/Documents/College/Fall2025/VLSI/ssp_controller/ssp_controller.srcs/sim_1/imports/xsim/ssp_test1.v" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/aleen/Documents/College/Fall2025/VLSI/SSP/ssp_controller/ssp_controller.srcs/sim_1/imports/xsim/ssp_test1.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module ssp_test

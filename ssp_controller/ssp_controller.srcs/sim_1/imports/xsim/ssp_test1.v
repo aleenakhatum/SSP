@@ -10,12 +10,12 @@ module ssp_test;
 		clear_b = 1'b0;
 		psel = 1'b0;
 		sspclkin = 1'b0;
-    sspfssin = 1'b0;
-    ssprxd = 1'b0;
+        sspfssin = 1'b0;
+        ssprxd = 1'b0;
 		@(posedge clock);
 		#1;
 		@(posedge clock);
-    data_in = 8'b11111111; //8'hFF, dummy data. should not enter into SSP.
+        data_in = 8'b11111111; //8'hFF, dummy data. should not enter into SSP.
 		#1;
 		clear_b = 1'b1;
 		#50 
@@ -32,17 +32,18 @@ module ssp_test;
 		psel = 1'b1;
 		#40
 		data_in = 8'b00111001; //8'h39**
-    #40
+        #40
 		data_in = 8'b10011101; //8'h9D**
-    #40
+        #40
 		data_in = 8'b01110100; //8'h74**
-    #40
-    data_in = 8'b10001111; //8'h8F**
-    #40
-    data_in = 8'b10110001; //8'bB1**
+        #40
+        data_in = 8'b10001111; //8'h8F**
+        #40
+        data_in = 8'b10110001; //8'bB1**
 		#40
-    data_in = 8'b01010101; //8'b55**
-	
+        data_in = 8'b01010101; //8'b55**
+	    #10
+	    psel = 1'b0;
 	end
 	
 	always 

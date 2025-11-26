@@ -20,7 +20,7 @@ module fifo4_8(
     reg read_new;
     wire read_rising;
     
-    assign read_rising = read && !read_new;
+    assign read_rising = ~read && read_new;
     
     always @(posedge clk) begin
         if (reset == 1'b1) begin

@@ -61,7 +61,7 @@ module tx_rx_logic(
     wire CLEAR = ~CLEAR_B;
     
     always@(negedge SSPCLKOUT) begin
-        if ((tx_state == tx_LOAD || tx_state == tx_SHIFT) && SSPFSSIN == 1)begin
+        if (tx_state == tx_SHIFT)begin
             SSPOE_B <= 1'b0;
         end
         else if (tx_state == tx_IDLE) begin 
@@ -85,7 +85,7 @@ module tx_rx_logic(
             tx_LOAD: begin
                 shift_reg <= TxData;
                 SSPFSSOUT <= 1; //high for bit before msb
-                bit_count_tx <= 0;
+                bit_count_tx <= -1;
                 tx_state <= tx_SHIFT;
                 if (tx_empty == 0) begin
                     tx_read <= 1; //read next data from fifo if next data is available
@@ -98,13 +98,23 @@ module tx_rx_logic(
                 shift_reg <= {shift_reg[6:0],1'b0};
                 bit_count_tx <= bit_count_tx + 1;
                 
-                if (bit_count_tx == 7) begin
-                    bit_count_tx <= 0;
+                if (bit_count_tx == 6) begin
+                    bit_count_tx <= 7;
                     if (tx_empty == 0) begin //more data to transmit
                         tx_read <= 1;
-                        tx_state <= tx_SHIFT;
                         shift_reg <= TxData;
                         SSPFSSOUT <= 1; //high for lsb if there is a next data
+                    end
+                    else if (tx_empty == 1) begin //nothing else to read
+                        SSPFSSOUT <= 0;
+                    end
+                end
+                else if (bit_count_tx == 7) begin
+                    bit_count_tx <= 0;
+                    if (tx_empty == 0) begin //more data to transmit
+                        tx_read <= 0;
+                        tx_state <= tx_SHIFT;
+                        SSPFSSOUT <= 0; 
                     end
                     else if (tx_empty == 1) begin //nothing else to read
                         tx_state <= tx_IDLE;

@@ -7,16 +7,16 @@ Starting static elaboration
 Pass Through NonSizing Optimizer
 Completed static elaboration
 Starting simulation data flow analysis
-WARNING: [XSIM 43-4099] "C:/Users/aleen/Documents/College/Fall2025/VLSI/ssp_controller/ssp_controller.srcs/sources_1/new/clk_div2.v" Line 1. Module clk_div2 doesn't have a timescale but at least one module in design has a timescale.
-WARNING: [XSIM 43-4099] "C:/Users/aleen/Documents/College/Fall2025/VLSI/ssp_controller/ssp_controller.srcs/sources_1/new/TxFIFO.v" Line 1. Module TxFIFO doesn't have a timescale but at least one module in design has a timescale.
-WARNING: [XSIM 43-4099] "C:/Users/aleen/Documents/College/Fall2025/VLSI/ssp_controller/ssp_controller.srcs/sources_1/new/fifo4_8.v" Line 1. Module fifo4_8 doesn't have a timescale but at least one module in design has a timescale.
-WARNING: [XSIM 43-4099] "C:/Users/aleen/Documents/College/Fall2025/VLSI/ssp_controller/ssp_controller.srcs/sources_1/new/RxFIFO.v" Line 1. Module RxFIFO doesn't have a timescale but at least one module in design has a timescale.
-WARNING: [XSIM 43-4099] "C:/Users/aleen/Documents/College/Fall2025/VLSI/ssp_controller/ssp_controller.srcs/sources_1/new/fifo4_8.v" Line 1. Module fifo4_8 doesn't have a timescale but at least one module in design has a timescale.
-WARNING: [XSIM 43-4099] "C:/Users/aleen/Documents/College/Fall2025/VLSI/ssp_controller/ssp_controller.srcs/sources_1/new/clk_div2.v" Line 1. Module clk_div2 doesn't have a timescale but at least one module in design has a timescale.
-WARNING: [XSIM 43-4099] "C:/Users/aleen/Documents/College/Fall2025/VLSI/ssp_controller/ssp_controller.srcs/sources_1/new/TxFIFO.v" Line 1. Module TxFIFO doesn't have a timescale but at least one module in design has a timescale.
-WARNING: [XSIM 43-4099] "C:/Users/aleen/Documents/College/Fall2025/VLSI/ssp_controller/ssp_controller.srcs/sources_1/new/fifo4_8.v" Line 1. Module fifo4_8 doesn't have a timescale but at least one module in design has a timescale.
-WARNING: [XSIM 43-4099] "C:/Users/aleen/Documents/College/Fall2025/VLSI/ssp_controller/ssp_controller.srcs/sources_1/new/RxFIFO.v" Line 1. Module RxFIFO doesn't have a timescale but at least one module in design has a timescale.
-WARNING: [XSIM 43-4099] "C:/Users/aleen/Documents/College/Fall2025/VLSI/ssp_controller/ssp_controller.srcs/sources_1/new/fifo4_8.v" Line 1. Module fifo4_8 doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/aleen/Documents/College/Fall2025/VLSI/SSP/ssp_controller/ssp_controller.srcs/sources_1/new/clk_div2.v" Line 1. Module clk_div2 doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/aleen/Documents/College/Fall2025/VLSI/SSP/ssp_controller/ssp_controller.srcs/sources_1/new/TxFIFO.v" Line 1. Module TxFIFO doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/aleen/Documents/College/Fall2025/VLSI/SSP/ssp_controller/ssp_controller.srcs/sources_1/new/fifo4_8.v" Line 1. Module fifo4_8 doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/aleen/Documents/College/Fall2025/VLSI/SSP/ssp_controller/ssp_controller.srcs/sources_1/new/RxFIFO.v" Line 1. Module RxFIFO doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/aleen/Documents/College/Fall2025/VLSI/SSP/ssp_controller/ssp_controller.srcs/sources_1/new/fifo4_8.v" Line 1. Module fifo4_8 doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/aleen/Documents/College/Fall2025/VLSI/SSP/ssp_controller/ssp_controller.srcs/sources_1/new/clk_div2.v" Line 1. Module clk_div2 doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/aleen/Documents/College/Fall2025/VLSI/SSP/ssp_controller/ssp_controller.srcs/sources_1/new/TxFIFO.v" Line 1. Module TxFIFO doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/aleen/Documents/College/Fall2025/VLSI/SSP/ssp_controller/ssp_controller.srcs/sources_1/new/fifo4_8.v" Line 1. Module fifo4_8 doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/aleen/Documents/College/Fall2025/VLSI/SSP/ssp_controller/ssp_controller.srcs/sources_1/new/RxFIFO.v" Line 1. Module RxFIFO doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/aleen/Documents/College/Fall2025/VLSI/SSP/ssp_controller/ssp_controller.srcs/sources_1/new/fifo4_8.v" Line 1. Module fifo4_8 doesn't have a timescale but at least one module in design has a timescale.
 Completed simulation data flow analysis
 Time Resolution for simulation is 1ps
 Compiling module xil_defaultlib.clk_div2

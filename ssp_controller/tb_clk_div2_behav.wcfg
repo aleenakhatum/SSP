@@ -11,26 +11,18 @@
       </db_ref>
    </db_ref_list>
    <zoom_setting>
-      <ZoomStartTime time="313.667 ns"></ZoomStartTime>
-      <ZoomEndTime time="1,815.668 ns"></ZoomEndTime>
-      <Cursor1Time time="564.000 ns"></Cursor1Time>
+      <ZoomStartTime time="300.000 ns"></ZoomStartTime>
+      <ZoomEndTime time="1,578.001 ns"></ZoomEndTime>
+      <Cursor1Time time="500.000 ns"></Cursor1Time>
    </zoom_setting>
    <column_width_setting>
-      <NameColumnWidth column_width="137"></NameColumnWidth>
+      <NameColumnWidth column_width="117"></NameColumnWidth>
       <ValueColumnWidth column_width="72"></ValueColumnWidth>
    </column_width_setting>
    <WVObjectSize size="17" />
-   <wvobject fp_name="/ssp_test/clock" type="logic">
-      <obj_property name="ElementShortName">clock</obj_property>
-      <obj_property name="ObjectShortName">clock</obj_property>
-   </wvobject>
    <wvobject fp_name="/ssp_test/ssp1/u_TxFIFO/u_fifo/fifo" type="array">
       <obj_property name="ElementShortName">fifo[3:0][7:0]</obj_property>
       <obj_property name="ObjectShortName">fifo[3:0][7:0]</obj_property>
-   </wvobject>
-   <wvobject fp_name="/ssp_test/ssp1/u_TxFIFO/u_fifo/full" type="logic">
-      <obj_property name="ElementShortName">full</obj_property>
-      <obj_property name="ObjectShortName">full</obj_property>
    </wvobject>
    <wvobject fp_name="/ssp_test/ssp1/u_TxFIFO/u_fifo/count" type="array">
       <obj_property name="ElementShortName">count[2:0]</obj_property>
@@ -76,6 +68,14 @@
       <obj_property name="ElementShortName">tx_read</obj_property>
       <obj_property name="ObjectShortName">tx_read</obj_property>
    </wvobject>
+   <wvobject fp_name="/ssp_test/ssp1/u_tx_rx/bit_count_tx" type="array">
+      <obj_property name="ElementShortName">bit_count_tx[3:0]</obj_property>
+      <obj_property name="ObjectShortName">bit_count_tx[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/ssp_test/sspoe_b" type="logic">
+      <obj_property name="ElementShortName">sspoe_b</obj_property>
+      <obj_property name="ObjectShortName">sspoe_b</obj_property>
+   </wvobject>
    <wvobject fp_name="/ssp_test/ssp1/u_tx_rx/tx_empty" type="logic">
       <obj_property name="ElementShortName">tx_empty</obj_property>
       <obj_property name="ObjectShortName">tx_empty</obj_property>
@@ -84,8 +84,8 @@
       <obj_property name="ElementShortName">rptr[1:0]</obj_property>
       <obj_property name="ObjectShortName">rptr[1:0]</obj_property>
    </wvobject>
-   <wvobject fp_name="/ssp_test/ssp1/u_tx_rx/bit_count_tx" type="array">
-      <obj_property name="ElementShortName">bit_count_tx[3:0]</obj_property>
-      <obj_property name="ObjectShortName">bit_count_tx[3:0]</obj_property>
+   <wvobject fp_name="/ssp_test/ssp1/u_TxFIFO/u_fifo/wptr" type="array">
+      <obj_property name="ElementShortName">wptr[1:0]</obj_property>
+      <obj_property name="ObjectShortName">wptr[1:0]</obj_property>
    </wvobject>
 </wave_config>

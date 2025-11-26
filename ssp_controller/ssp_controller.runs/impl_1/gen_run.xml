@@ -1,48 +1,48 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <GenRun Id="impl_1" LaunchPart="xc7k70tfbv676-1" LaunchTime="1764024833">
   <File Type="REPORTS-TCL" Name="tb_clk_div2_reports.tcl"/>
-  <File Type="ROUTE-PWR-SUM" Name="tx_rx_logic_power_summary_routed.pb"/>
+  <File Type="ROUTE-PWR-SUM" Name="ssp_power_summary_routed.pb"/>
   <File Type="BITSTR-MMI" Name="tb_clk_div2.mmi"/>
-  <File Type="OPT-DRC" Name="tx_rx_logic_drc_opted.rpt"/>
+  <File Type="OPT-DRC" Name="ssp_drc_opted.rpt"/>
   <File Type="BG-DRC" Name="tb_clk_div2.drc"/>
-  <File Type="ROUTE-STATUS-PB" Name="tx_rx_logic_route_status.pb"/>
+  <File Type="ROUTE-STATUS-PB" Name="ssp_route_status.pb"/>
   <File Type="BG-BGN" Name="tb_clk_div2.bgn"/>
-  <File Type="PLACE-UTIL" Name="tx_rx_logic_utilization_placed.rpt"/>
-  <File Type="PLACE-UTIL-PB" Name="tx_rx_logic_utilization_placed.pb"/>
-  <File Type="PLACE-IO" Name="tx_rx_logic_io_placed.rpt"/>
+  <File Type="PLACE-UTIL" Name="ssp_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL-PB" Name="ssp_utilization_placed.pb"/>
+  <File Type="PLACE-IO" Name="ssp_io_placed.rpt"/>
   <File Type="BG-BIN" Name="tb_clk_div2.bin"/>
-  <File Type="PLACE-CTRL" Name="tx_rx_logic_control_sets_placed.rpt"/>
-  <File Type="ROUTE-PWR-RPX" Name="tx_rx_logic_power_routed.rpx"/>
+  <File Type="PLACE-CTRL" Name="ssp_control_sets_placed.rpt"/>
+  <File Type="ROUTE-PWR-RPX" Name="ssp_power_routed.rpx"/>
   <File Type="ROUTE-DCP" Name="tb_clk_div2_routed.dcp"/>
   <File Type="BITSTR-MSK" Name="tb_clk_div2.msk"/>
   <File Type="BITSTR-RBT" Name="tb_clk_div2.rbt"/>
-  <File Type="ROUTE-TIMINGSUMMARY" Name="tx_rx_logic_timing_summary_routed.rpt"/>
-  <File Type="ROUTE-TIMING-RPX" Name="tx_rx_logic_timing_summary_routed.rpx"/>
-  <File Type="ROUTE-STATUS" Name="tx_rx_logic_route_status.rpt"/>
+  <File Type="ROUTE-TIMINGSUMMARY" Name="ssp_timing_summary_routed.rpt"/>
+  <File Type="ROUTE-TIMING-RPX" Name="ssp_timing_summary_routed.rpx"/>
+  <File Type="ROUTE-STATUS" Name="ssp_route_status.rpt"/>
   <File Type="PA-TCL" Name="tb_clk_div2.tcl"/>
-  <File Type="ROUTE-PWR" Name="tx_rx_logic_power_routed.rpt"/>
-  <File Type="ROUTE-DRC" Name="tx_rx_logic_drc_routed.rpt"/>
-  <File Type="ROUTE-DRC-RPX" Name="tx_rx_logic_drc_routed.rpx"/>
-  <File Type="ROUTE-DRC-PB" Name="tx_rx_logic_drc_routed.pb"/>
+  <File Type="ROUTE-PWR" Name="ssp_power_routed.rpt"/>
+  <File Type="ROUTE-DRC" Name="ssp_drc_routed.rpt"/>
+  <File Type="ROUTE-DRC-RPX" Name="ssp_drc_routed.rpx"/>
+  <File Type="ROUTE-DRC-PB" Name="ssp_drc_routed.pb"/>
   <File Type="BITSTR-SYSDEF" Name="tb_clk_div2.sysdef"/>
-  <File Type="ROUTE-METHODOLOGY-DRC" Name="tx_rx_logic_methodology_drc_routed.rpt"/>
-  <File Type="ROUTE-METHODOLOGY-DRC-RPX" Name="tx_rx_logic_methodology_drc_routed.rpx"/>
+  <File Type="ROUTE-METHODOLOGY-DRC" Name="ssp_methodology_drc_routed.rpt"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-RPX" Name="ssp_methodology_drc_routed.rpx"/>
   <File Type="BITSTR-LTX" Name="debug_nets.ltx"/>
   <File Type="BITSTR-LTX" Name="tb_clk_div2.ltx"/>
-  <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="tx_rx_logic_methodology_drc_routed.pb"/>
-  <File Type="ROUTE-SIMILARITY" Name="tx_rx_logic_incremental_reuse_routed.rpt"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="ssp_methodology_drc_routed.pb"/>
+  <File Type="ROUTE-SIMILARITY" Name="ssp_incremental_reuse_routed.rpt"/>
   <File Type="RDI-RDI" Name="tb_clk_div2.vdi"/>
-  <File Type="ROUTE-CLK" Name="tx_rx_logic_clock_utilization_routed.rpt"/>
-  <File Type="ROUTE-BUS-SKEW" Name="tx_rx_logic_bus_skew_routed.rpt"/>
-  <File Type="ROUTE-BUS-SKEW-RPX" Name="tx_rx_logic_bus_skew_routed.rpx"/>
-  <File Type="ROUTE-BUS-SKEW-PB" Name="tx_rx_logic_bus_skew_routed.pb"/>
-  <File Type="POSTROUTE-PHYSOPT-TIMING" Name="tx_rx_logic_timing_summary_postroute_physopted.rpt"/>
-  <File Type="POSTROUTE-PHYSOPT-TIMING-RPX" Name="tx_rx_logic_timing_summary_postroute_physopted.rpx"/>
-  <File Type="POSTROUTE-PHYSOPT-TIMING-PB" Name="tx_rx_logic_timing_summary_postroute_physopted.pb"/>
-  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW" Name="tx_rx_logic_bus_skew_postroute_physopted.rpt"/>
-  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-RPX" Name="tx_rx_logic_bus_skew_postroute_physopted.rpx"/>
+  <File Type="ROUTE-CLK" Name="ssp_clock_utilization_routed.rpt"/>
+  <File Type="ROUTE-BUS-SKEW" Name="ssp_bus_skew_routed.rpt"/>
+  <File Type="ROUTE-BUS-SKEW-RPX" Name="ssp_bus_skew_routed.rpx"/>
+  <File Type="ROUTE-BUS-SKEW-PB" Name="ssp_bus_skew_routed.pb"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING" Name="ssp_timing_summary_postroute_physopted.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-RPX" Name="ssp_timing_summary_postroute_physopted.rpx"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-PB" Name="ssp_timing_summary_postroute_physopted.pb"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW" Name="ssp_bus_skew_postroute_physopted.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-RPX" Name="ssp_bus_skew_postroute_physopted.rpx"/>
   <File Type="BG-BIT" Name="tb_clk_div2.bit"/>
-  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-PB" Name="tx_rx_logic_bus_skew_postroute_physopted.pb"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-PB" Name="ssp_bus_skew_postroute_physopted.pb"/>
   <File Type="BITSTR-NKY" Name="tb_clk_div2.nky"/>
   <File Type="BITSTR-BMM" Name="tb_clk_div2_bd.bmm"/>
   <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
