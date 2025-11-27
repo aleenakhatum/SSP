@@ -11,81 +11,81 @@
       </db_ref>
    </db_ref_list>
    <zoom_setting>
-      <ZoomStartTime time="300.000 ns"></ZoomStartTime>
-      <ZoomEndTime time="1,578.001 ns"></ZoomEndTime>
-      <Cursor1Time time="500.000 ns"></Cursor1Time>
+      <ZoomStartTime time="547.000 ns"></ZoomStartTime>
+      <ZoomEndTime time="3,145.001 ns"></ZoomEndTime>
+      <Cursor1Time time="980.000 ns"></Cursor1Time>
    </zoom_setting>
    <column_width_setting>
-      <NameColumnWidth column_width="117"></NameColumnWidth>
+      <NameColumnWidth column_width="165"></NameColumnWidth>
       <ValueColumnWidth column_width="72"></ValueColumnWidth>
    </column_width_setting>
    <WVObjectSize size="17" />
-   <wvobject fp_name="/ssp_test/ssp1/u_TxFIFO/u_fifo/fifo" type="array">
-      <obj_property name="ElementShortName">fifo[3:0][7:0]</obj_property>
-      <obj_property name="ObjectShortName">fifo[3:0][7:0]</obj_property>
+   <wvobject fp_name="/ssp_test/clk_wire" type="logic">
+      <obj_property name="ElementShortName">clk_wire</obj_property>
+      <obj_property name="ObjectShortName">clk_wire</obj_property>
    </wvobject>
-   <wvobject fp_name="/ssp_test/ssp1/u_TxFIFO/u_fifo/count" type="array">
-      <obj_property name="ElementShortName">count[2:0]</obj_property>
-      <obj_property name="ObjectShortName">count[2:0]</obj_property>
+   <wvobject fp_name="/ssp_test/fss_wire" type="logic">
+      <obj_property name="ElementShortName">fss_wire</obj_property>
+      <obj_property name="ObjectShortName">fss_wire</obj_property>
    </wvobject>
-   <wvobject fp_name="/ssp_test/sspfssout" type="logic">
-      <obj_property name="ElementShortName">sspfssout</obj_property>
-      <obj_property name="ObjectShortName">sspfssout</obj_property>
+   <wvobject fp_name="/ssp_test/ssp2/u_tx_rx/rx_empty" type="logic">
+      <obj_property name="ElementShortName">rx_empty</obj_property>
+      <obj_property name="ObjectShortName">rx_empty</obj_property>
    </wvobject>
-   <wvobject fp_name="/ssp_test/ssptxintr" type="logic">
-      <obj_property name="ElementShortName">ssptxintr</obj_property>
-      <obj_property name="ObjectShortName">ssptxintr</obj_property>
+   <wvobject fp_name="/ssp_test/ssp2/u_tx_rx/rx_state" type="array">
+      <obj_property name="ElementShortName">rx_state[1:0]</obj_property>
+      <obj_property name="ObjectShortName">rx_state[1:0]</obj_property>
    </wvobject>
-   <wvobject fp_name="/ssp_test/psel" type="logic">
-      <obj_property name="ElementShortName">psel</obj_property>
-      <obj_property name="ObjectShortName">psel</obj_property>
-   </wvobject>
-   <wvobject fp_name="/ssp_test/data_in" type="array">
-      <obj_property name="ElementShortName">data_in[7:0]</obj_property>
-      <obj_property name="ObjectShortName">data_in[7:0]</obj_property>
-   </wvobject>
-   <wvobject fp_name="/ssp_test/ssp1/u_TxFIFO/TxData" type="array">
+   <wvobject fp_name="/ssp_test/ssp2/u_TxFIFO/TxData" type="array">
       <obj_property name="ElementShortName">TxData[7:0]</obj_property>
       <obj_property name="ObjectShortName">TxData[7:0]</obj_property>
    </wvobject>
-   <wvobject fp_name="/ssp_test/ssp1/u_tx_rx/SSPTXD" type="logic">
-      <obj_property name="ElementShortName">SSPTXD</obj_property>
-      <obj_property name="ObjectShortName">SSPTXD</obj_property>
+   <wvobject fp_name="/ssp_test/ssp2/u_RxFIFO/fifo" type="array">
+      <obj_property name="ElementShortName">fifo[3:0][7:0]</obj_property>
+      <obj_property name="ObjectShortName">fifo[3:0][7:0]</obj_property>
    </wvobject>
-   <wvobject fp_name="/ssp_test/ssp1/u_tx_rx/tx_state" type="array">
+   <wvobject fp_name="/ssp_test/ssp2/u_RxFIFO/RxData" type="array">
+      <obj_property name="ElementShortName">RxData[7:0]</obj_property>
+      <obj_property name="ObjectShortName">RxData[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/ssp_test/ssp2/u_RxFIFO/write_new" type="logic">
+      <obj_property name="ElementShortName">write_new</obj_property>
+      <obj_property name="ObjectShortName">write_new</obj_property>
+   </wvobject>
+   <wvobject fp_name="/ssp_test/ssp2/u_RxFIFO/write_rising" type="logic">
+      <obj_property name="ElementShortName">write_rising</obj_property>
+      <obj_property name="ObjectShortName">write_rising</obj_property>
+   </wvobject>
+   <wvobject fp_name="/ssp_test/fss_wire" type="logic">
+      <obj_property name="ElementShortName">fss_wire</obj_property>
+      <obj_property name="ObjectShortName">fss_wire</obj_property>
+   </wvobject>
+   <wvobject fp_name="/ssp_test/ssp2/u_tx_rx/parallel_reg" type="array">
+      <obj_property name="ElementShortName">parallel_reg[7:0]</obj_property>
+      <obj_property name="ObjectShortName">parallel_reg[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/ssp_test/ssp2/u_tx_rx/bit_count_rx" type="array">
+      <obj_property name="ElementShortName">bit_count_rx[3:0]</obj_property>
+      <obj_property name="ObjectShortName">bit_count_rx[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/ssp_test/ssp2/u_tx_rx/rx_out" type="array">
+      <obj_property name="ElementShortName">rx_out[7:0]</obj_property>
+      <obj_property name="ObjectShortName">rx_out[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/ssp_test/ssp2/u_tx_rx/SSPRXD" type="logic">
+      <obj_property name="ElementShortName">SSPRXD</obj_property>
+      <obj_property name="ObjectShortName">SSPRXD</obj_property>
+   </wvobject>
+   <wvobject fp_name="/ssp_test/ssp2/u_RxFIFO/PSEL" type="logic">
+      <obj_property name="ElementShortName">PSEL</obj_property>
+      <obj_property name="ObjectShortName">PSEL</obj_property>
+   </wvobject>
+   <wvobject fp_name="/ssp_test/ssp2/u_tx_rx/tx_state" type="array">
       <obj_property name="ElementShortName">tx_state[1:0]</obj_property>
       <obj_property name="ObjectShortName">tx_state[1:0]</obj_property>
    </wvobject>
-   <wvobject fp_name="/ssp_test/ssp1/u_tx_rx/shift_reg" type="array">
-      <obj_property name="ElementShortName">shift_reg[7:0]</obj_property>
-      <obj_property name="ObjectShortName">shift_reg[7:0]</obj_property>
-   </wvobject>
-   <wvobject fp_name="/ssp_test/ssp1/u_tx_rx/SSPCLKOUT" type="logic">
-      <obj_property name="ElementShortName">SSPCLKOUT</obj_property>
-      <obj_property name="ObjectShortName">SSPCLKOUT</obj_property>
-   </wvobject>
-   <wvobject fp_name="/ssp_test/ssp1/u_tx_rx/tx_read" type="logic">
-      <obj_property name="ElementShortName">tx_read</obj_property>
-      <obj_property name="ObjectShortName">tx_read</obj_property>
-   </wvobject>
-   <wvobject fp_name="/ssp_test/ssp1/u_tx_rx/bit_count_tx" type="array">
-      <obj_property name="ElementShortName">bit_count_tx[3:0]</obj_property>
-      <obj_property name="ObjectShortName">bit_count_tx[3:0]</obj_property>
-   </wvobject>
-   <wvobject fp_name="/ssp_test/sspoe_b" type="logic">
-      <obj_property name="ElementShortName">sspoe_b</obj_property>
-      <obj_property name="ObjectShortName">sspoe_b</obj_property>
-   </wvobject>
-   <wvobject fp_name="/ssp_test/ssp1/u_tx_rx/tx_empty" type="logic">
-      <obj_property name="ElementShortName">tx_empty</obj_property>
-      <obj_property name="ObjectShortName">tx_empty</obj_property>
-   </wvobject>
-   <wvobject fp_name="/ssp_test/ssp1/u_TxFIFO/u_fifo/rptr" type="array">
-      <obj_property name="ElementShortName">rptr[1:0]</obj_property>
-      <obj_property name="ObjectShortName">rptr[1:0]</obj_property>
-   </wvobject>
-   <wvobject fp_name="/ssp_test/ssp1/u_TxFIFO/u_fifo/wptr" type="array">
-      <obj_property name="ElementShortName">wptr[1:0]</obj_property>
-      <obj_property name="ObjectShortName">wptr[1:0]</obj_property>
+   <wvobject fp_name="/ssp_test/ssp2/u_TxFIFO/fifo" type="array">
+      <obj_property name="ElementShortName">fifo[3:0][7:0]</obj_property>
+      <obj_property name="ObjectShortName">fifo[3:0][7:0]</obj_property>
    </wvobject>
 </wave_config>

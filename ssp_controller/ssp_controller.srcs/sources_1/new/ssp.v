@@ -79,7 +79,7 @@ module ssp(
         .PCLK(PCLK),
         .CLEAR_B(CLEAR_B),
         .PSEL(PSEL),
-        .PWRITE(PWRITE && ~rx_full),
+        .rx_read(~PWRITE),
         .PRDATA(PRDATA),
         .rx_write(rx_write),
         .RxData(RxData),
@@ -108,7 +108,8 @@ module ssp(
         .SSPRXD     (SSPRXD),
         .rx_empty   (rx_empty),    
         .rx_full    (rx_full),
-        .rx_write   (rx_write)
+        .rx_write   (rx_write),
+        .rx_out     (RxData)
     );
     
 endmodule

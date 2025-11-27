@@ -16,34 +16,11 @@ module ssp_test;
         clear_b = 1'b1;
         #15 
         pwrite = 1'b1;
-        data_in = 8'b10010100; //8'h94
-        #40
-        data_in = 8'b00001111; //8'h0F
-        #40
-        data_in = 8'b01010001; //8'h51
-        #40
-        data_in = 8'b00100100; //8'h24
-        #40
-        data_in = 8'b01100111; //8'h67
-        #40 
-        data_in = 8'b11110011; //8'hF3
-    #40
-        data_in = 8'b10110110; //8'hB6
-    #40
-    data_in = 8'b10000100; //8'b84
-        #30
-    psel = 1'b0;
+        data_in = 8'b10010101; //8'h95
+        #50
+        psel = 1'b0;
         #870
-        psel = 1'b1;
         pwrite = 1'b0;
-    #80
-    pwrite = 1'b1;
-    #40
-    psel = 1'b0;
-    #3600
-    pwrite = 1'b0;
-    psel = 1'b1;
-    #500
     $stop;
     
     end

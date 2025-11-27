@@ -19,8 +19,11 @@ module fifo4_8(
     assign data_out = fifo[rptr];
     reg read_new;
     wire read_rising;
+    //reg write_new;
+    //wire write_rising;
     
     assign read_rising = ~read && read_new;
+    //assign write_rising = ~write && write_new;
     
     always @(posedge clk) begin
         if (reset == 1'b1) begin
@@ -31,9 +34,10 @@ module fifo4_8(
         end
         else begin
             read_new <= read;
+            //write_new <= write;
         end
         
-        if (write == 1'b1 && full == 1'b0 && select == 1'b1) begin //write signal high
+        if (write == 1'b1 && full == 1'b0) begin //write signal high
             fifo[wptr] <= data_in;
             wptr <= wptr + 1;
             count <= count + 1;

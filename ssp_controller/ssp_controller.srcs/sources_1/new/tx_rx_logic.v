@@ -39,7 +39,8 @@ module tx_rx_logic(
         input SSPRXD, //Rx serial data in
         input rx_empty,//unused (should be used by processor)
         input rx_full,
-        output reg rx_write
+        output reg rx_write,
+        output reg [7:0] rx_out
     );
     
     //tx
@@ -132,10 +133,15 @@ module tx_rx_logic(
         case (rx_state)
             rx_IDLE: begin
                 bit_count_rx <= 4'd8;   
-                parallel_reg <= 8'd0;  
+                parallel_reg <= 8'd0; 
+                rx_out <= 8'd0; 
                 rx_write <= 1'b0;      
-                if (rx_full == 0) begin //otherwise stay at IDLE state if rx_full = 1
-                    rx_state <= rx_WAIT;
+                if (rx_full == 0 && SSPFSSIN == 1) begin //otherwise stay at IDLE state if rx_full = 1
+                    rx_state <= rx_SHIFT;
+                    bit_count_rx <= 4'd7;
+                end
+                if (bit_count_rx == 4'd7)begin
+                    rx_out <= parallel_reg;
                 end
             end
             rx_WAIT: begin
@@ -146,15 +152,22 @@ module tx_rx_logic(
             end
             rx_SHIFT: begin
                 bit_count_rx <= bit_count_rx - 1;
-                parallel_reg <= {SSPRXD, parallel_reg[7:1]}; //save 1 serial bit
+                parallel_reg[bit_count_rx] <= SSPRXD; //save 1 serial bit
+                rx_write <= 0;
                 if (bit_count_rx == 0) begin //done collecting all bits
                     rx_write <= 1; //write incoming parallel register to fifo
-                    if (rx_full == 0) begin //more data to transmit
-                        rx_state <= rx_WAIT;
+                    if (rx_full == 0 && SSPFSSIN == 1) begin //more data to transmit
+                        rx_state <= rx_SHIFT;
+                        bit_count_rx <= 4'd7;
                     end
-                    else if (rx_full == 1) begin //no more data to transmit
+                    else if (rx_full == 1 || SSPFSSIN == 0) begin //no more data to transmit
                         rx_state <= rx_IDLE;
+                        rx_write <= 1;
+                        bit_count_rx <= 4'd7;
                     end
+                end
+                else if (bit_count_rx == 7) begin
+                    rx_out <= parallel_reg;
                 end
             end
             default: begin
