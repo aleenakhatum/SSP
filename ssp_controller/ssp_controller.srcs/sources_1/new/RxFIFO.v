@@ -18,17 +18,18 @@ module RxFIFO (
     reg [7:0] fifo [3:0];
     reg [1:0] wptr, rptr;
     reg [2:0] count;
+    reg [7:0] prdata_save;
     
     assign full = (count == 4);
     assign empty = (count == 0);
-    assign PRDATA = fifo[rptr];
+    assign PRDATA = (PSEL && rx_read) ? prdata_save : 8'hz;
     reg read_new;
     wire read_rising;
     reg write_new;
     wire write_rising;
     
     assign SSPRXINR = full;
-    assign read_rising = ~rx_read && read_new;
+    assign read_rising = rx_read && ~read_new;
     assign write_rising = ~rx_write && write_new;
     
     always @(posedge PCLK) begin
@@ -37,6 +38,7 @@ module RxFIFO (
             rptr <= 2'd0;
             count <= 3'd0;
             read_new <= 0;
+            prdata_save <= fifo[rptr];
         end
         else begin
             read_new <= rx_read;
@@ -48,9 +50,10 @@ module RxFIFO (
             wptr <= wptr + 1;
             count <= count + 1;
         end
-        else if (read_rising == 1'b1 && empty == 1'b0) begin //read signal high
+        else if (rx_read == 1'b1 && empty == 1'b0) begin //read signal high
             rptr <= rptr + 1;
             count <= count - 1;
+            prdata_save <= fifo[rptr];
         end
     end    
 endmodule

@@ -3,12 +3,12 @@
 Nov  8 2024
 22:36:57
 C:/Users/aleen/Documents/College/Fall2025/VLSI/SSP/ssp_controller/ssp_controller.sim/sim_1/behav/xsim/glbl.v,1724786425,verilog,,,,glbl,,,,,,,,
-C:/Users/aleen/Documents/College/Fall2025/VLSI/SSP/ssp_controller/ssp_controller.srcs/sim_1/new/ssp_test3.v,1764233874,verilog,,,,ssp_test,,,,,,,,
-C:/Users/aleen/Documents/College/Fall2025/VLSI/SSP/ssp_controller/ssp_controller.srcs/sources_1/new/RxFIFO.v,1764229670,verilog,,C:/Users/aleen/Documents/College/Fall2025/VLSI/SSP/ssp_controller/ssp_controller.srcs/sources_1/new/TxFIFO.v,,RxFIFO,,,,,,,,
+C:/Users/aleen/Documents/College/Fall2025/VLSI/SSP/ssp_controller/ssp_controller.srcs/sim_1/new/ssp_test4.v,1764969138,verilog,,,,ssp_test,,,,,,,,
+C:/Users/aleen/Documents/College/Fall2025/VLSI/SSP/ssp_controller/ssp_controller.srcs/sources_1/new/RxFIFO.v,1764970548,verilog,,C:/Users/aleen/Documents/College/Fall2025/VLSI/SSP/ssp_controller/ssp_controller.srcs/sources_1/new/TxFIFO.v,,RxFIFO,,,,,,,,
 C:/Users/aleen/Documents/College/Fall2025/VLSI/SSP/ssp_controller/ssp_controller.srcs/sources_1/new/TxFIFO.v,1764233624,verilog,,C:/Users/aleen/Documents/College/Fall2025/VLSI/SSP/ssp_controller/ssp_controller.srcs/sources_1/new/clk_div2.v,,TxFIFO,,,,,,,,
 C:/Users/aleen/Documents/College/Fall2025/VLSI/SSP/ssp_controller/ssp_controller.srcs/sources_1/new/clk_div2.v,1762990085,verilog,,C:/Users/aleen/Documents/College/Fall2025/VLSI/SSP/ssp_controller/ssp_controller.srcs/sources_1/new/ssp.v,,clk_div2,,,,,,,,
 C:/Users/aleen/Documents/College/Fall2025/VLSI/SSP/ssp_controller/ssp_controller.srcs/sources_1/new/fifo4_8.v,1764228733,verilog,,C:/Users/aleen/Documents/College/Fall2025/VLSI/SSP/ssp_controller/ssp_controller.srcs/sources_1/new/ssp.v,,fifo4_8,,,,,,,,
 C:/Users/aleen/Documents/College/Fall2025/VLSI/SSP/ssp_controller/ssp_controller.srcs/sources_1/new/ssp.v,1764231550,verilog,,C:/Users/aleen/Documents/College/Fall2025/VLSI/SSP/ssp_controller/ssp_controller.srcs/sources_1/new/tx_rx_logic.v,,ssp,,,,,,,,
-C:/Users/aleen/Documents/College/Fall2025/VLSI/SSP/ssp_controller/ssp_controller.srcs/sources_1/new/tx_rx_logic.v,1764234999,verilog,,C:/Users/aleen/Documents/College/Fall2025/VLSI/SSP/ssp_controller/ssp_controller.srcs/sim_1/new/ssp_test3.v,,tx_rx_logic,,,,,,,,
+C:/Users/aleen/Documents/College/Fall2025/VLSI/SSP/ssp_controller/ssp_controller.srcs/sources_1/new/tx_rx_logic.v,1764234999,verilog,,C:/Users/aleen/Documents/College/Fall2025/VLSI/SSP/ssp_controller/ssp_controller.srcs/sim_1/new/ssp_test4.v,,tx_rx_logic,,,,,,,,
 C:/Users/aleen/Documents/College/Fall2025/VLSI/ssp_controller/ssp_controller.srcs/sim_1/new/tb3_tx_rx_logic.v,1764115753,verilog,,,,tb_tx_rx_logic,,,,,,,,
 C:/Users/aleen/Documents/College/Fall2025/VLSI/ssp_controller/ssp_controller.srcs/sim_1/new/tb_fifo4_8.v,1763071364,verilog,,C:/Users/aleen/Documents/College/Fall2025/VLSI/ssp_controller/ssp_controller.srcs/sources_1/new/tx_rx_logic.v,,tb_fifo4_8,,,,,,,,
